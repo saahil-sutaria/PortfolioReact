@@ -3,7 +3,7 @@ import React, {} from 'react';
 import Confetti from 'react-confetti'
 import * as Scroll from 'react-scroll';
 import { Link } from 'react-scroll'
-import Content from './SideBar'
+import Content from './Content.js'
 import './App.css';
 import Typical from 'react-typical'
 
@@ -25,15 +25,16 @@ function App() {
                     <p id="color">Software Engineer</p>
                     <Typical
                         id ="color"
-                        steps={['Located in SF Bay Area 👾', 5000 ]}
+                        steps={['Located in SF Bay Area 👾 ' , 5000 ]}
                         loop={1}
                         wrapper="r"
                     />
 
 
                 </div>
+               
                 <div className="container">
-                    <div className="center" >
+                    <div className="cen" >
                         <Link
                             activeClass = "active"
                             to ="#section2"
@@ -50,9 +51,7 @@ function App() {
 
             </div>
 
-            <div className = "followup_div" id="#section2" >
-                <Content/>
-            </div>
+        <Content/>
 
         </div>
 

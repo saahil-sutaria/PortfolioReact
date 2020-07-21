@@ -1,0 +1,50 @@
+
+.followup_div {
+    background-image: url("https://github.com/saahil-sutaria/PortfolioReact/blob/master/public/download.jpeg?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top:100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto;
+    padding: 30px;
+}
+.grid-item {
+    margin: auto;
+    max-width: 1000px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: left;
+    float: left;
+}
+#part{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: red;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+
+}
+
+
+.content{
+    padding:20px 30px 5px 30px;
+
+}
+
+
+.effect8{
+    -webkit-box-shadow: -1px 1px 16px 5px rgba(158,66,43,0.76);
+    -moz-box-shadow: -1px 1px 16px 5px rgba(158,66,43,0.76);
+    box-shadow: -1px 1px 16px 5px rgba(158,66,43,0.76);
+}
