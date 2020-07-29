@@ -6,13 +6,17 @@ import { Link } from 'react-scroll'
 import Content from './Content.js'
 import './App.css';
 import Typical from 'react-typical'
+import ParticlesBg from "particles-bg";
 
 
 function App() {
 
     return (
         <div>
+
             <div className="fillscreen" id="">
+                <ParticlesBg color={["#000000"]} type="cobweb" bg={true} num={[55]} v={[1, 2]} />
+
                 <Confetti
                     width={window.innerWidth}
                     height={window.innerHeight}
@@ -21,16 +25,14 @@ function App() {
                     friction={0.99}
                 />
 
-                <div className="frontpage text">
-                    <p id="color">Software Engineer</p>
+                <div className="frontpage text zoom">
+
                     <Typical
-                        id ="color"
-                        steps={['Located in SF Bay Area 👾 ' , 5000 ]}
-                        loop={1}
-                        wrapper="r"
+                        steps={['Software Engineer 👾 ' , 3000, 'Web Developer 👾 ' , 3000, 'Machine Learning? ' , 2000, 'Still Learning! ' , 3000 ]}
+                        loop={100}
+                        wrapper="p"
                     />
-
-
+                    <p id="color">Located in SF Bay Area</p>
                 </div>
                
                 <div className="container">
@@ -38,9 +40,8 @@ function App() {
                         <Link
                             activeClass = "active"
                             to ="#section2"
-
                             smooth={true}
-
+                            offset={-window.innerHeight * 0.40}
                             duration={1500}>
                             Move this page
                         </Link>
@@ -52,6 +53,7 @@ function App() {
             </div>
 
         <Content/>
+
 
         </div>
 

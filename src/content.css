@@ -1,28 +1,39 @@
 
 .followup_div {
-    background-image: url("https://github.com/saahil-sutaria/PortfolioReact/blob/master/public/download.jpeg?raw=true");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 
-    height: 100%;
+    max-height: max-content;
     width: 100%;
     position:absolute;
     top:100%;
+
+
 }
 
 .grid-container {
     display: grid;
     grid-template-rows: auto;
     padding: 30px;
+
 }
 .grid-item {
     margin: auto;
-    max-width: 1000px;
-    padding: 10px;
+    max-width: 1200px;
+    padding: 50px;
     font-size: 30px;
     text-align: left;
-    float: left;
+    overflow: auto;
+}
+.main{
+
+
+    position: relative;
+    top: -70px;
+    background: white;
+    border-radius: 10px;
+    padding: 50px;
+    overflow-x: auto;
+    overflow-y: auto;
+
 }
 #part{
     width: 100%;
@@ -35,16 +46,58 @@
 
 
 }
+.customFont{
+    font-family:'customFont';
+    color: #686317;
+    padding-top: 20px;
+    padding-bottom: 5px;
 
+}
+.customFont2{
+    font-family:'customFont2';
+    color: #400008;
+    font-size: 4vw;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.customFont3{
+    font-family:'customFont3';
+    color: rgb(0, 0, 0);
+    font-size: 4vw;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+@font-face {
+    font-family: 'customFont';
+    src: url('Fonts/ALBAS___.TTF') ;
+    font-weight: bold;
+    font-style: normal;
 
+}
+@font-face {
+    font-family: 'customFont2';
+    src: url('Fonts/Bellerose.ttf') ;
+    font-weight: bold;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'customFont3';
+    src: url('Fonts/Cast_Iron.ttf') ;
+    font-weight: bold;
+    font-style: normal;
+
+}
 .content{
     padding:20px 30px 5px 30px;
 
 }
 
-
-.effect8{
+.effect{
     -webkit-box-shadow: -1px 1px 16px 5px rgba(158,66,43,0.76);
     -moz-box-shadow: -1px 1px 16px 5px rgba(158,66,43,0.76);
     box-shadow: -1px 1px 16px 5px rgba(158,66,43,0.76);
 }
+
+
+
